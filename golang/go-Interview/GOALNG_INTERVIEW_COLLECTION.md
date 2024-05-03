@@ -1883,9 +1883,7 @@ func GC() {
 
 2）gcTriggerTime：当距离上一个 GC 周期的时间超过一定时间时，将会触发。时间周期以runtime.forcegcperiod 变量为准，默认 2 分钟。
 
-3）gcTriggerCycle：如果没有开启 GC，则启动 GC。
-
-4）手动触发的 runtime.GC 方法。
+3）gcTriggerCycle：手动调用的 runtime.GC 方法触发，如果没有开启 GC，则启动 GC。
 
 ## **十一、内存相关**
 
